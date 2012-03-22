@@ -1,4 +1,4 @@
-module SpreeSocial
+module SpreeSocialAccount
   OAUTH_PROVIDERS = [
     ["Facebook", "facebook"],
     ["Twitter", "twitter"],
@@ -6,7 +6,7 @@ module SpreeSocial
   ]
 
   class Engine < Rails::Engine
-    engine_name 'spree_social'
+    engine_name 'spree_social_account'
 
     config.autoload_paths += %W(#{config.root}/lib)
 
@@ -32,7 +32,7 @@ module SpreeSocial
       if auth_method.provider == provider
         key = auth_method.api_key
         secret = auth_method.api_secret
-        puts("[Spree Social] Loading #{auth_method.provider.capitalize} as authentication source")
+        puts("[Spree Social Account] Loading #{auth_method.provider.capitalize} as authentication source")
       end
     end
     self.setup_key_for(provider.to_sym, key, secret)

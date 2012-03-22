@@ -1,4 +1,5 @@
 en:
+  sign_in_through_one_of_these_services: Use your Social Account
   add_another_service: "Add another service to sign in with:"
   edit_social_method: "Editing Social Authentication Method"
   new_social_method: "New Authentication Method"

@@ -1,0 +1,14 @@
+it:
+  sign_in_through_one_of_these_services: Utilizza il tuo social account
+  add_another_service: "Aggiungi un nuovo social per registrarti:"
+  edit_social_method: "Modifica il Metodo di Autenticazione del Social Account"
+  new_social_method: "Nuovo Metodo di Autenticazione"
+  one_more_step: 'One more step to complete your registration from %{kind}'
+  remove_authentication_option_confirmation: "Are you sure you would like to remove this authentication method?"
+  sign_into_account: "You can sign into this account using:"
+  sign_in_through_service: "Sign in through one of these services:"
+  social_api_key: "API Key"
+  social_api_secret: "API Secret"
+  social_authentication_methods: "Metodi di Autenticazione OAuth"
+  social_authentication_methods_description: "Installazione Metodi di Autenticazione OAuth"
+  social_provider: "Social Provider"

@@ -10,11 +10,11 @@ Setup for Production
 --------------------
 Add this to your gem file Gemfile
 
-gem "spree_social", :git => "git://github.com/spree/spree_social.git"
+gem "spree_social_account", :git => "git://github.com/damianogiacomello/spree_social_account.git"
 
 bundle update
 
-bundle exec rake spree_social:install
+bundle exec rake spree_social_account:install
 
 rake db:migrate
 

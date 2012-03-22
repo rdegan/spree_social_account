@@ -1,3 +1,9 @@
+Deface::Override.new(:virtual_path => "spree/checkout/registration",
+                     :name => "add_socials_to_checkout_extras",
+                     :insert_bottom => "[data-hook='social_checkout']",
+                     :partial => "spree/shared/social_checkout",
+                     :disabled => false)
+
 Deface::Override.new(:virtual_path => "spree/user_registrations/new",
                      :name => "add_socials_to_login_extras",
                      :insert_after => "[data-hook='login_extras']",

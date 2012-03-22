@@ -1,8 +1,8 @@
 # encoding: UTF-8
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
-  s.name        = 'spree_social'
-  s.version     = '2.1.0'
+  s.name        = 'spree_social_account'
+  s.version     = '1.0.0'
   s.summary     = 'Adds social network login services (OAuth) to Spree'
   s.required_ruby_version = '>= 1.8.7'
 

@@ -24,6 +24,8 @@ class Spree::OmniauthCallbacksController < Devise::OmniauthCallbacksController
           else
             user = Spree::User.new
             user.apply_omniauth(auth_hash)
+            user.email = auth_hash['info']['email']
+            logger.info(user.errors.full_messages) unless user.valid?
             if user.save
               flash[:notice] = "Signed in successfully."
               sign_in_and_redirect :user, user
@@ -44,7 +46,7 @@ class Spree::OmniauthCallbacksController < Devise::OmniauthCallbacksController
     end
   end
 
-  SpreeSocial::OAUTH_PROVIDERS.each do |provider|
+  SpreeSocialAccount::OAUTH_PROVIDERS.each do |provider|
     provides_callback_for provider[1].to_sym
   end
 
