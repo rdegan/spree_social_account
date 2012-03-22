@@ -7,7 +7,7 @@
 
 <%= auth_form.field_container :provider do %>
   <%= auth_form.label :provider, t(:social_provider) %>
-  <%= auth_form.select :provider, SpreeSocial::OAUTH_PROVIDERS, { :include_blank => true } %>
+  <%= auth_form.select :provider, SpreeSocialAccount::OAUTH_PROVIDERS, { :include_blank => true } %>
 <% end %>
 
 <%= auth_form.field_container :api_key do %>
